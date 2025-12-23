@@ -1,0 +1,113 @@
+*{
+  box-sizing:border-box;
+  font-family:'Inter' sans-serif;
+}
+
+body{
+  padding:20px;
+  height:100vh;
+  background-color:#0B2434;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+#root {
+  width: 100%;
+  height:100%;
+  margin: 0 auto;
+  max-width:500px;
+  max-height:500px;
+}
+.box{
+  height:100%;
+  background-color:rgb(238, 234, 234);
+  color:black;
+  border-radius:7px;
+  padding:75px;
+  display:flex;
+  flex-direction:column;
+  row-gap:25px;
+  align-items:center;
+  justify-content:center;
+}
+
+.text-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+h2,p{
+  padding:0px;
+  margin:0px;
+}
+
+.dice-section{
+  display:grid;
+  grid-template:auto auto /repeat(5,1fr);
+  column-gap:10px;
+  row-gap:10px;
+}
+
+.die{
+  background-color:white;
+  color:black;
+  padding:0px;
+  height:60px;
+  width:60px;
+  border-radius:5px;
+  box-shadow:0.5px  1px 1.5px 0.5px rgb(164, 162, 162);
+}
+
+.roll-btn{
+  background-color: rgb(102, 27, 251);
+  width:auto;
+  padding:5px 22px;
+  height:35px;
+  font-family:'Inter';
+}
+
+.greeting-card{
+  z-index:2;
+  background-color:Yellow;
+  color:Black;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  width:auto;
+  padding:6px 20px;
+  border-radius:15px;
+  border-style:solid;
+  border-color:rgb(47, 0, 255);
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+  animation-name:zoomInFade;
+  animation-duration:0.5s;
+  animation-timing-function:ease-out;
+  animation-fill-mode:forwards;
+
+}
+
+@keyframes zoomInFade{
+  
+  0%{
+    opacity:0;
+    transform:translate(-50%,-50%) scale(0.5);
+  }
+
+  100%{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+  }
+}
+
+Confetti{
+  z-index:40;
+}
