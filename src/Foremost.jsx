@@ -69,7 +69,7 @@ export default function Foremost(){
             
             <div className="box">
                 <div className="text-section">
-                    <h2>Tenzies</h2>
+                    <h2>Gotti</h2>
                     <p>Roll until all dice are same. Click each die to freeze it at its current value between rolls.</p>
                 </div>
                 <div className="dice-section">
